@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobapp.Page2"
+             Title="Page2">
+    <ContentPage Title="Home">
+        <VerticalStackLayout BackgroundColor="AliceBlue">
+            <Image Source="home.png"
+               HeightRequest="150"
+               Aspect="AspectFill"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                 Margin="0,20,0,0" />
+            <Label Text=".NET MAUI"
+         HorizontalOptions="Center"
+         VerticalOptions="Center"
+         FontSize="40"
+         FontAttributes="Bold"
+         TextColor="DarkViolet"
+         />
+
+            <Label Text="This application is made by .net maui."
+        HorizontalTextAlignment="Center"
+        FontSize="20"
+        TextColor="Black"
+          Margin="5,10,5,0" />
+
+        </VerticalStackLayout>
+    </ContentPage>
+    <!--Second Tab-->
+    <ContentPage Title="Profile">
+        <VerticalStackLayout BackgroundColor="AliceBlue">
+            <Image Source="profile.png"
+        HeightRequest="200"
+        WidthRequest="200"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+
+            <Label Text="Vincent Rupita"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        FontSize="20"
+        TextColor="Black"/>
+
+            <Label Text="23-9005199"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        FontSize="20"
+        TextColor="Black"/>
+
+            <Label Text="BSIT"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        FontSize="20"
+        TextColor="Black"/>
+        </VerticalStackLayout>
+    </ContentPage>
+    <!--Third Tab-->
+    <ContentPage Title="About">
+        <VerticalStackLayout BackgroundColor="AliceBlue">
+            <Label Text="FIRST ACTIVITY IN MOBAPPLICATION"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HorizontalTextAlignment="Center"
+        FontSize="35"
+        TextColor="Black"
+        Margin="0,20,0,0" />
+
+            <Label Text="Contains Different set of pages in .NET MAUI"
+        HorizontalTextAlignment="Center"
+        FontSize="25"
+        TextColor="Black"/>
+        </VerticalStackLayout>
+    </ContentPage>
+</TabbedPage>

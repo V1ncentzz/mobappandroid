@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:mobapp"
+             x:Class="mobapp.Page1"
+             Title="Page1">
+
+<FlyoutPage.Flyout>
+        <ContentPage Title="Menu">
+            <VerticalStackLayout>
+                <Button Text="Main Page"
+Clicked="Button_Clicked_1"/>
+                <Button Text="Tabbed Page"
+        Clicked="Button_Clicked"/>
+
+           
+            </VerticalStackLayout>
+            
+        </ContentPage>
+        </FlyoutPage.Flyout>
+            
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:Page2/>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
